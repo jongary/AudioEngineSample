@@ -13,6 +13,8 @@
 		DBD3A6252568B84F00D8BC81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD3A6232568B84F00D8BC81 /* Main.storyboard */; };
 		DBD3A6272568B85500D8BC81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD3A6262568B85500D8BC81 /* Assets.xcassets */; };
 		DBD3A62A2568B85500D8BC81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD3A6282568B85500D8BC81 /* LaunchScreen.storyboard */; };
+		DBD3A6332568B89E00D8BC81 /* AudioFilePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3A6322568B89E00D8BC81 /* AudioFilePlayer.swift */; };
+		DBD3A6392568BA9800D8BC81 /* shine a little light.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBD3A6382568BA9800D8BC81 /* shine a little light.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DBD3A6262568B85500D8BC81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBD3A6292568B85500D8BC81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBD3A62B2568B85500D8BC81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBD3A6322568B89E00D8BC81 /* AudioFilePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFilePlayer.swift; sourceTree = "<group>"; };
+		DBD3A6382568BA9800D8BC81 /* shine a little light.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "shine a little light.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				DBD3A6262568B85500D8BC81 /* Assets.xcassets */,
 				DBD3A6282568B85500D8BC81 /* LaunchScreen.storyboard */,
 				DBD3A62B2568B85500D8BC81 /* Info.plist */,
+				DBD3A6322568B89E00D8BC81 /* AudioFilePlayer.swift */,
+				DBD3A6382568BA9800D8BC81 /* shine a little light.mp3 */,
 			);
 			path = AudioEngineSample;
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD3A6392568BA9800D8BC81 /* shine a little light.mp3 in Resources */,
 				DBD3A62A2568B85500D8BC81 /* LaunchScreen.storyboard in Resources */,
 				DBD3A6272568B85500D8BC81 /* Assets.xcassets in Resources */,
 				DBD3A6252568B84F00D8BC81 /* Main.storyboard in Resources */,
@@ -140,6 +147,7 @@
 				DBD3A6222568B84F00D8BC81 /* ViewController.swift in Sources */,
 				DBD3A61E2568B84F00D8BC81 /* AppDelegate.swift in Sources */,
 				DBD3A6202568B84F00D8BC81 /* SceneDelegate.swift in Sources */,
+				DBD3A6332568B89E00D8BC81 /* AudioFilePlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
