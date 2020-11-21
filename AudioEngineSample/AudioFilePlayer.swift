@@ -121,6 +121,11 @@ class AudioFilePlayer: NSObject, ObservableObject  {
         }
     }
 
+    var playerVolume: Float = 1 {
+        didSet {
+            audioGraph.eqNode.globalGain = playerVolume
+        }
+    }
 
     /// The audio file to play.
     var audioFile: AVAudioFile? = nil {

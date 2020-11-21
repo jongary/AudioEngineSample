@@ -17,6 +17,8 @@ class ViewController: UIViewController {
 
     @IBOutlet var eqNodeGlobalGainSlider: UISlider!
 
+    @IBOutlet var playerVolumeSlider: UISlider!
+
     @IBOutlet var timeLabel: UILabel!
 
     var timeSubscription: AnyCancellable?
@@ -35,9 +37,9 @@ class ViewController: UIViewController {
         timeSubscription = player.$playbackTime
             .sink { [weak self] (t) in
                 self?.timeLabel.text = DateComponentsFormatter.durationFormatter.string(from: t)
-            }
+                self?.updateUI()
+          }
 
-        updateUI()
     }
 
 
@@ -53,9 +55,14 @@ class ViewController: UIViewController {
         player.globalGain = eqNodeGlobalGainSlider.value
     }
 
+    @IBAction func playerVolumeAction(_ sender: Any) {
+        player.playerVolume = playerVolumeSlider.value
+    }
+
     func updateUI() {
         mainMixerNodeVolumeSlider.value = player.volume
         eqNodeGlobalGainSlider.value = player.globalGain
+        playerVolumeSlider.value = player.playerVolume
     }
 
 
