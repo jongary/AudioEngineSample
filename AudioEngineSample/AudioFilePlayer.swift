@@ -76,7 +76,7 @@ class AudioGraph {
         self.engine.attach(self.playerNode)
         self.engine.attach(self.eqNode)
         self.engine.connect(self.playerNode, to: self.eqNode, format: nil)
-        self.engine.connect(self.eqNode, to: self.engine.outputNode, format: nil)
+        self.engine.connect(self.eqNode, to: self.engine.mainMixerNode, format: nil)
 
         self.engine.prepare()
     }
@@ -123,7 +123,7 @@ class AudioFilePlayer: NSObject, ObservableObject  {
 
     var playerVolume: Float = 1 {
         didSet {
-            audioGraph.eqNode.globalGain = playerVolume
+            audioGraph.playerNode.volume = playerVolume
         }
     }
 

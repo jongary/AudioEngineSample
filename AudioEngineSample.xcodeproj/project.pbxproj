@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB5AA34D256C4AC00073AA85 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DBD3A61A2568B84F00D8BC81 /* AudioEngineSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioEngineSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD3A61D2568B84F00D8BC81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBD3A61F2568B84F00D8BC81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 				DBD3A6282568B85500D8BC81 /* LaunchScreen.storyboard */,
 				DBD3A62B2568B85500D8BC81 /* Info.plist */,
 				DBD3A6322568B89E00D8BC81 /* AudioFilePlayer.swift */,
+				DB5AA34D256C4AC00073AA85 /* README.md */,
 				DBD3A6382568BA9800D8BC81 /* shine a little light.mp3 */,
 			);
 			path = AudioEngineSample;
